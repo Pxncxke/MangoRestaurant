@@ -50,8 +50,7 @@ namespace Mango.Service.ProductAPI.Controllers
         }
 
         [HttpPost]
-        [Route("{id}")]
-        public async Task<object> Post(ProductDto productDto)
+        public async Task<object> Post([FromBody]ProductDto productDto)
         {
             try
             {
@@ -67,8 +66,7 @@ namespace Mango.Service.ProductAPI.Controllers
         }
 
         [HttpPut]
-        [Route("{id}")]
-        public async Task<object> Put(ProductDto productDto)
+        public async Task<object> Put([FromBody] ProductDto productDto)
         {
             try
             {
